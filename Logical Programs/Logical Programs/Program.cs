@@ -8,6 +8,7 @@ namespace Logical_Programs
         {
             Console.WriteLine("Choose 1: Fibonacci series");
             Console.WriteLine("Choose 2: Perfect Number");
+            Console.WriteLine("Choose 3: Prime Number");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -18,6 +19,10 @@ namespace Logical_Programs
                 case 2:
                     Perfect perfect = new Perfect();
                     perfect.PerfectNumber();
+                    break;
+                case 3:
+                    Prime prime = new Prime();
+                    prime.IsPrime();
                     break;
                 default:
                     Console.WriteLine("Enter valid option");
