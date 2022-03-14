@@ -9,6 +9,7 @@ namespace Logical_Programs
             Console.WriteLine("Choose 1: Fibonacci series");
             Console.WriteLine("Choose 2: Perfect Number");
             Console.WriteLine("Choose 3: Prime Number");
+            Console.WriteLine("Choose 4: Reverse Number");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -23,6 +24,10 @@ namespace Logical_Programs
                 case 3:
                     Prime prime = new Prime();
                     prime.IsPrime();
+                    break;
+                case 4:
+                    ReverseNumber reverse = new ReverseNumber();
+                    reverse.Reverse();
                     break;
                 default:
                     Console.WriteLine("Enter valid option");
