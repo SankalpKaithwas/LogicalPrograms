@@ -10,6 +10,7 @@ namespace Logical_Programs
             Console.WriteLine("Choose 2: Perfect Number");
             Console.WriteLine("Choose 3: Prime Number");
             Console.WriteLine("Choose 4: Reverse Number");
+            Console.WriteLine("Choose 5: Coupon Number");            
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -28,6 +29,10 @@ namespace Logical_Programs
                 case 4:
                     ReverseNumber reverse = new ReverseNumber();
                     reverse.Reverse();
+                    break;
+                case 5:
+                    Coupon coupon = new Coupon();
+                    coupon.GetCoupon();
                     break;
                 default:
                     Console.WriteLine("Enter valid option");
