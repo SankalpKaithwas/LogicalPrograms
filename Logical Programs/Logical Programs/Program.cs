@@ -10,7 +10,8 @@ namespace Logical_Programs
             Console.WriteLine("Choose 2: Perfect Number");
             Console.WriteLine("Choose 3: Prime Number");
             Console.WriteLine("Choose 4: Reverse Number");
-            Console.WriteLine("Choose 5: Coupon Number");            
+            Console.WriteLine("Choose 5: Coupon Number");
+            Console.WriteLine("Choose 6: StopWatch");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -33,6 +34,10 @@ namespace Logical_Programs
                 case 5:
                     Coupon coupon = new Coupon();
                     coupon.GetCoupon();
+                    break;
+                case 6:
+                    StopWatch stopwatch = new StopWatch();
+                    stopwatch.Run();
                     break;
                 default:
                     Console.WriteLine("Enter valid option");
